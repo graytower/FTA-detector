@@ -1,0 +1,1227 @@
+{
+  "header_types" : [
+    {
+      "name" : "scalars_0",
+      "id" : 0,
+      "fields" : []
+    },
+    {
+      "name" : "standard_metadata",
+      "id" : 1,
+      "fields" : [
+        ["ingress_port", 9, false],
+        ["egress_spec", 9, false],
+        ["egress_port", 9, false],
+        ["instance_type", 32, false],
+        ["packet_length", 32, false],
+        ["enq_timestamp", 32, false],
+        ["enq_qdepth", 19, false],
+        ["deq_timedelta", 32, false],
+        ["deq_qdepth", 19, false],
+        ["ingress_global_timestamp", 48, false],
+        ["egress_global_timestamp", 48, false],
+        ["mcast_grp", 16, false],
+        ["egress_rid", 16, false],
+        ["checksum_error", 1, false],
+        ["parser_error", 32, false],
+        ["priority", 3, false],
+        ["_padding", 3, false]
+      ]
+    },
+    {
+      "name" : "ethernet_t",
+      "id" : 2,
+      "fields" : [
+        ["dstMac", 48, false],
+        ["srcMac", 48, false]
+      ]
+    },
+    {
+      "name" : "type_t",
+      "id" : 3,
+      "fields" : [
+        ["protocol", 16, false]
+      ]
+    },
+    {
+      "name" : "int_option_t",
+      "id" : 4,
+      "fields" : [
+        ["flag", 8, false],
+        ["int_num", 8, false]
+      ]
+    },
+    {
+      "name" : "inthdr_t",
+      "id" : 5,
+      "fields" : [
+        ["sw_id", 16, false],
+        ["ingress_port", 16, false],
+        ["egress_port", 16, false],
+        ["rsvd", 16, false]
+      ]
+    },
+    {
+      "name" : "sr_option_t",
+      "id" : 6,
+      "fields" : [
+        ["flag", 8, false],
+        ["sr_num", 8, false]
+      ]
+    },
+    {
+      "name" : "sr_t",
+      "id" : 7,
+      "fields" : [
+        ["flag", 8, false],
+        ["next_port", 8, false]
+      ]
+    },
+    {
+      "name" : "sr_num_remain_md_t",
+      "id" : 8,
+      "fields" : [
+        ["sr_num_remain", 8, false]
+      ]
+    }
+  ],
+  "headers" : [
+    {
+      "name" : "scalars",
+      "id" : 0,
+      "header_type" : "scalars_0",
+      "metadata" : true,
+      "pi_omit" : true
+    },
+    {
+      "name" : "standard_metadata",
+      "id" : 1,
+      "header_type" : "standard_metadata",
+      "metadata" : true,
+      "pi_omit" : true
+    },
+    {
+      "name" : "ethernet",
+      "id" : 2,
+      "header_type" : "ethernet_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "type_2",
+      "id" : 3,
+      "header_type" : "type_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "int_option",
+      "id" : 4,
+      "header_type" : "int_option_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "inthdr",
+      "id" : 5,
+      "header_type" : "inthdr_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "type_1[0]",
+      "id" : 6,
+      "header_type" : "type_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "sr_option[0]",
+      "id" : 7,
+      "header_type" : "sr_option_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "sr[0]",
+      "id" : 8,
+      "header_type" : "sr_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "sr[1]",
+      "id" : 9,
+      "header_type" : "sr_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "sr[2]",
+      "id" : 10,
+      "header_type" : "sr_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "sr[3]",
+      "id" : 11,
+      "header_type" : "sr_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "sr[4]",
+      "id" : 12,
+      "header_type" : "sr_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "sr[5]",
+      "id" : 13,
+      "header_type" : "sr_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "sr[6]",
+      "id" : 14,
+      "header_type" : "sr_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "sr[7]",
+      "id" : 15,
+      "header_type" : "sr_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "sr[8]",
+      "id" : 16,
+      "header_type" : "sr_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "sr[9]",
+      "id" : 17,
+      "header_type" : "sr_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "userMetadata.sr_num_remain_md",
+      "id" : 18,
+      "header_type" : "sr_num_remain_md_t",
+      "metadata" : false,
+      "pi_omit" : true
+    }
+  ],
+  "header_stacks" : [
+    {
+      "name" : "type_1",
+      "id" : 0,
+      "header_type" : "type_t",
+      "size" : 1,
+      "header_ids" : [6]
+    },
+    {
+      "name" : "sr_option",
+      "id" : 1,
+      "header_type" : "sr_option_t",
+      "size" : 1,
+      "header_ids" : [7]
+    },
+    {
+      "name" : "sr",
+      "id" : 2,
+      "header_type" : "sr_t",
+      "size" : 10,
+      "header_ids" : [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+    }
+  ],
+  "header_union_types" : [],
+  "header_unions" : [],
+  "header_union_stacks" : [],
+  "field_lists" : [],
+  "errors" : [
+    ["NoError", 0],
+    ["PacketTooShort", 1],
+    ["NoMatch", 2],
+    ["StackOutOfBounds", 3],
+    ["HeaderTooShort", 4],
+    ["ParserTimeout", 5],
+    ["ParserInvalidArgument", 6]
+  ],
+  "enums" : [],
+  "parsers" : [
+    {
+      "name" : "parser",
+      "id" : 0,
+      "init_state" : "start",
+      "parse_states" : [
+        {
+          "name" : "start",
+          "id" : 0,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "ethernet"
+                }
+              ],
+              "op" : "extract"
+            },
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "type_1[0]"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "type" : "hexstr",
+              "value" : "0x0700",
+              "mask" : null,
+              "next_state" : "parse_sr_option"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0701",
+              "mask" : null,
+              "next_state" : "parse_int_option"
+            },
+            {
+              "value" : "default",
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : [
+            {
+              "type" : "field",
+              "value" : ["type_1[0]", "protocol"]
+            }
+          ]
+        },
+        {
+          "name" : "parse_sr_option",
+          "id" : 1,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "sr_option[0]"
+                }
+              ],
+              "op" : "extract"
+            },
+            {
+              "parameters" : [
+                {
+                  "type" : "field",
+                  "value" : ["userMetadata.sr_num_remain_md", "sr_num_remain"]
+                },
+                {
+                  "type" : "field",
+                  "value" : ["sr_option[0]", "sr_num"]
+                }
+              ],
+              "op" : "set"
+            }
+          ],
+          "transitions" : [
+            {
+              "value" : "default",
+              "mask" : null,
+              "next_state" : "parse_sr"
+            }
+          ],
+          "transition_key" : []
+        },
+        {
+          "name" : "parse_sr",
+          "id" : 2,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "stack",
+                  "value" : "sr"
+                }
+              ],
+              "op" : "extract"
+            },
+            {
+              "parameters" : [
+                {
+                  "type" : "field",
+                  "value" : ["userMetadata.sr_num_remain_md", "sr_num_remain"]
+                },
+                {
+                  "type" : "expression",
+                  "value" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "+",
+                          "left" : {
+                            "type" : "field",
+                            "value" : ["userMetadata.sr_num_remain_md", "sr_num_remain"]
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0xff"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xff"
+                      }
+                    }
+                  }
+                }
+              ],
+              "op" : "set"
+            }
+          ],
+          "transitions" : [
+            {
+              "type" : "hexstr",
+              "value" : "0x00",
+              "mask" : null,
+              "next_state" : "parse_type_2"
+            },
+            {
+              "value" : "default",
+              "mask" : null,
+              "next_state" : "parse_sr"
+            }
+          ],
+          "transition_key" : [
+            {
+              "type" : "field",
+              "value" : ["userMetadata.sr_num_remain_md", "sr_num_remain"]
+            }
+          ]
+        },
+        {
+          "name" : "parse_type_2",
+          "id" : 3,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "type_2"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "type" : "hexstr",
+              "value" : "0x0701",
+              "mask" : null,
+              "next_state" : "parse_int_option"
+            },
+            {
+              "value" : "default",
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : [
+            {
+              "type" : "field",
+              "value" : ["type_2", "protocol"]
+            }
+          ]
+        },
+        {
+          "name" : "parse_int_option",
+          "id" : 4,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "int_option"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "value" : "default",
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : []
+        }
+      ]
+    }
+  ],
+  "parse_vsets" : [],
+  "deparsers" : [
+    {
+      "name" : "deparser",
+      "id" : 0,
+      "source_info" : {
+        "filename" : "./my_int.p4",
+        "line" : 223,
+        "column" : 8,
+        "source_fragment" : "MyDeparser"
+      },
+      "order" : ["ethernet", "type_1[0]", "sr_option[0]", "sr[0]", "sr[1]", "sr[2]", "sr[3]", "sr[4]", "sr[5]", "sr[6]", "sr[7]", "sr[8]", "sr[9]", "type_2", "int_option", "inthdr"],
+      "primitives" : []
+    }
+  ],
+  "meter_arrays" : [],
+  "counter_arrays" : [],
+  "register_arrays" : [],
+  "calculations" : [],
+  "learn_lists" : [],
+  "actions" : [
+    {
+      "name" : "NoAction",
+      "id" : 0,
+      "runtime_data" : [],
+      "primitives" : []
+    },
+    {
+      "name" : "MyIngress.drop",
+      "id" : 1,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "mark_to_drop",
+          "parameters" : [
+            {
+              "type" : "header",
+              "value" : "standard_metadata"
+            }
+          ],
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 131,
+            "column" : 8,
+            "source_fragment" : "mark_to_drop(standard_metadata)"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "MyIngress.do_sr",
+      "id" : 2,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["standard_metadata", "egress_spec"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["sr[0]", "next_port"]
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0x01ff"
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 135,
+            "column" : 8,
+            "source_fragment" : "standard_metadata.egress_spec = (bit<9>)hdr.sr[0].next_port"
+          }
+        },
+        {
+          "op" : "pop",
+          "parameters" : [
+            {
+              "type" : "header_stack",
+              "value" : "sr"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x1"
+            }
+          ],
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 136,
+            "column" : 8,
+            "source_fragment" : "hdr.sr.pop_front(1)"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["sr_option[0]", "sr_num"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "+",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["sr_option[0]", "sr_num"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xff"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0xff"
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 137,
+            "column" : 8,
+            "source_fragment" : "hdr.sr_option[0].sr_num = hdr.sr_option[0].sr_num - 1"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "MyIngress.do_int_mcast",
+      "id" : 3,
+      "runtime_data" : [
+        {
+          "name" : "mcast_grp",
+          "bitwidth" : 16
+        }
+      ],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["standard_metadata", "mcast_grp"]
+            },
+            {
+              "type" : "runtime_data",
+              "value" : 0
+            }
+          ],
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 141,
+            "column" : 8,
+            "source_fragment" : "standard_metadata.mcast_grp = mcast_grp"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "my_int161",
+      "id" : 4,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "pop",
+          "parameters" : [
+            {
+              "type" : "header_stack",
+              "value" : "type_1"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x1"
+            }
+          ],
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 161,
+            "column" : 16,
+            "source_fragment" : "hdr.type_1.pop_front(1)"
+          }
+        },
+        {
+          "op" : "pop",
+          "parameters" : [
+            {
+              "type" : "header_stack",
+              "value" : "sr_option"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x1"
+            }
+          ],
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 162,
+            "column" : 16,
+            "source_fragment" : "hdr.sr_option.pop_front(1)"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "NoAction",
+      "id" : 5,
+      "runtime_data" : [],
+      "primitives" : []
+    },
+    {
+      "name" : "NoAction",
+      "id" : 6,
+      "runtime_data" : [],
+      "primitives" : []
+    },
+    {
+      "name" : "MyEgress.do_int",
+      "id" : 7,
+      "runtime_data" : [
+        {
+          "name" : "sw_id",
+          "bitwidth" : 16
+        }
+      ],
+      "primitives" : [
+        {
+          "op" : "add_header",
+          "parameters" : [
+            {
+              "type" : "header",
+              "value" : "inthdr"
+            }
+          ],
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 183,
+            "column" : 8,
+            "source_fragment" : "hdr.inthdr.setValid()"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["inthdr", "sw_id"]
+            },
+            {
+              "type" : "runtime_data",
+              "value" : 0
+            }
+          ],
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 184,
+            "column" : 8,
+            "source_fragment" : "hdr.inthdr.sw_id = sw_id"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["inthdr", "ingress_port"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["standard_metadata", "ingress_port"]
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0xffff"
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 185,
+            "column" : 8,
+            "source_fragment" : "hdr.inthdr.ingress_port=(bit<16>)standard_metadata.ingress_port"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["inthdr", "egress_port"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["standard_metadata", "egress_port"]
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0xffff"
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 186,
+            "column" : 8,
+            "source_fragment" : "hdr.inthdr.egress_port=(bit<16>)standard_metadata.egress_port"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["int_option", "int_num"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "+",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["int_option", "int_num"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0x01"
+                      }
+                    }
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0xff"
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 187,
+            "column" : 8,
+            "source_fragment" : "hdr.int_option.int_num = hdr.int_option.int_num + 1"
+          }
+        }
+      ]
+    }
+  ],
+  "pipelines" : [
+    {
+      "name" : "ingress",
+      "id" : 0,
+      "source_info" : {
+        "filename" : "./my_int.p4",
+        "line" : 127,
+        "column" : 8,
+        "source_fragment" : "MyIngress"
+      },
+      "init_table" : "node_2",
+      "tables" : [
+        {
+          "name" : "tbl_do_sr",
+          "id" : 0,
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 159,
+            "column" : 12,
+            "source_fragment" : "do_sr()"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [2],
+          "actions" : ["MyIngress.do_sr"],
+          "base_default_next" : "node_4",
+          "next_tables" : {
+            "MyIngress.do_sr" : "node_4"
+          },
+          "default_entry" : {
+            "action_id" : 2,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_my_int161",
+          "id" : 1,
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 161,
+            "column" : 16,
+            "source_fragment" : "hdr.type_1.pop_front(1); ..."
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [4],
+          "actions" : ["my_int161"],
+          "base_default_next" : null,
+          "next_tables" : {
+            "my_int161" : null
+          },
+          "default_entry" : {
+            "action_id" : 4,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "MyIngress.int_mcast_table",
+          "id" : 2,
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 144,
+            "column" : 10,
+            "source_fragment" : "int_mcast_table"
+          },
+          "key" : [
+            {
+              "match_type" : "exact",
+              "name" : "standard_metadata.ingress_port",
+              "target" : ["standard_metadata", "ingress_port"],
+              "mask" : null
+            }
+          ],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [3, 1, 0],
+          "actions" : ["MyIngress.do_int_mcast", "MyIngress.drop", "NoAction"],
+          "base_default_next" : null,
+          "next_tables" : {
+            "MyIngress.do_int_mcast" : null,
+            "MyIngress.drop" : null,
+            "NoAction" : null
+          },
+          "default_entry" : {
+            "action_id" : 1,
+            "action_const" : false,
+            "action_data" : [],
+            "action_entry_const" : false
+          }
+        }
+      ],
+      "action_profiles" : [],
+      "conditionals" : [
+        {
+          "name" : "node_2",
+          "id" : 0,
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 158,
+            "column" : 11,
+            "source_fragment" : "hdr.sr_option[0].isValid()"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "d2b",
+              "left" : null,
+              "right" : {
+                "type" : "field",
+                "value" : ["sr_option[0]", "$valid$"]
+              }
+            }
+          },
+          "true_next" : "tbl_do_sr",
+          "false_next" : "node_6"
+        },
+        {
+          "name" : "node_4",
+          "id" : 1,
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 160,
+            "column" : 15,
+            "source_fragment" : "hdr.sr_option[0].sr_num == 0"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "==",
+              "left" : {
+                "type" : "field",
+                "value" : ["sr_option[0]", "sr_num"]
+              },
+              "right" : {
+                "type" : "hexstr",
+                "value" : "0x00"
+              }
+            }
+          },
+          "false_next" : null,
+          "true_next" : "tbl_my_int161"
+        },
+        {
+          "name" : "node_6",
+          "id" : 2,
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 165,
+            "column" : 16,
+            "source_fragment" : "hdr.int_option.isValid()"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "d2b",
+              "left" : null,
+              "right" : {
+                "type" : "field",
+                "value" : ["int_option", "$valid$"]
+              }
+            }
+          },
+          "false_next" : null,
+          "true_next" : "MyIngress.int_mcast_table"
+        }
+      ]
+    },
+    {
+      "name" : "egress",
+      "id" : 1,
+      "source_info" : {
+        "filename" : "./my_int.p4",
+        "line" : 175,
+        "column" : 8,
+        "source_fragment" : "MyEgress"
+      },
+      "init_table" : "node_10",
+      "tables" : [
+        {
+          "name" : "MyEgress.int_table",
+          "id" : 3,
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 190,
+            "column" : 10,
+            "source_fragment" : "int_table"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [7, 5],
+          "actions" : ["MyEgress.do_int", "NoAction"],
+          "base_default_next" : null,
+          "next_tables" : {
+            "MyEgress.do_int" : null,
+            "NoAction" : null
+          },
+          "default_entry" : {
+            "action_id" : 5,
+            "action_const" : false,
+            "action_data" : [],
+            "action_entry_const" : false
+          }
+        },
+        {
+          "name" : "tbl_NoAction",
+          "id" : 4,
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 206,
+            "column" : 12,
+            "source_fragment" : "NoAction()"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [6],
+          "actions" : ["NoAction"],
+          "base_default_next" : null,
+          "next_tables" : {
+            "NoAction" : null
+          },
+          "default_entry" : {
+            "action_id" : 6,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        }
+      ],
+      "action_profiles" : [],
+      "conditionals" : [
+        {
+          "name" : "node_10",
+          "id" : 3,
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 199,
+            "column" : 12,
+            "source_fragment" : "hdr.int_option.isValid()"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "d2b",
+              "left" : null,
+              "right" : {
+                "type" : "field",
+                "value" : ["int_option", "$valid$"]
+              }
+            }
+          },
+          "true_next" : "node_11",
+          "false_next" : "tbl_NoAction"
+        },
+        {
+          "name" : "node_11",
+          "id" : 4,
+          "source_info" : {
+            "filename" : "./my_int.p4",
+            "line" : 201,
+            "column" : 15,
+            "source_fragment" : "hdr.int_option.flag < 0x80"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "<",
+              "left" : {
+                "type" : "field",
+                "value" : ["int_option", "flag"]
+              },
+              "right" : {
+                "type" : "hexstr",
+                "value" : "0x80"
+              }
+            }
+          },
+          "false_next" : null,
+          "true_next" : "MyEgress.int_table"
+        }
+      ]
+    }
+  ],
+  "checksums" : [],
+  "force_arith" : [],
+  "extern_instances" : [],
+  "field_aliases" : [
+    [
+      "queueing_metadata.enq_timestamp",
+      ["standard_metadata", "enq_timestamp"]
+    ],
+    [
+      "queueing_metadata.enq_qdepth",
+      ["standard_metadata", "enq_qdepth"]
+    ],
+    [
+      "queueing_metadata.deq_timedelta",
+      ["standard_metadata", "deq_timedelta"]
+    ],
+    [
+      "queueing_metadata.deq_qdepth",
+      ["standard_metadata", "deq_qdepth"]
+    ],
+    [
+      "intrinsic_metadata.ingress_global_timestamp",
+      ["standard_metadata", "ingress_global_timestamp"]
+    ],
+    [
+      "intrinsic_metadata.egress_global_timestamp",
+      ["standard_metadata", "egress_global_timestamp"]
+    ],
+    [
+      "intrinsic_metadata.mcast_grp",
+      ["standard_metadata", "mcast_grp"]
+    ],
+    [
+      "intrinsic_metadata.egress_rid",
+      ["standard_metadata", "egress_rid"]
+    ],
+    [
+      "intrinsic_metadata.priority",
+      ["standard_metadata", "priority"]
+    ]
+  ],
+  "program" : "./my_int.p4",
+  "__meta__" : {
+    "version" : [2, 18],
+    "compiler" : "https://github.com/p4lang/p4c"
+  }
+}

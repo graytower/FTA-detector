@@ -1,0 +1,9 @@
+// protoc -I=./ --python_out=./ ./link_status.proto
+
+syntax = "proto2";
+
+message LinkStatus {
+  required string node_1 = 1;
+  required string node_2 = 2;
+  required string status = 3;
+}

@@ -1,0 +1,20 @@
+1. Compile
+	'''sh build.sh'''
+
+2. Start topology. 
+	in ./topology
+	'''sudo python clos.py'''
+
+3. Start controller.
+	in ./controller
+	'''python controller.py'''
+
+4. Break a(some) link.
+	in ./topoloty
+	sudo python link_config.py p1_t1 p1_l1 down
+
+5. Failure locate and repairing process can be seen in the controller.
+
+6. Repaire links.
+	in ./topology
+	sudo python link_config.py p1_t1 p1_l1 up
